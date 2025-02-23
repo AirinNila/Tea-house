@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea-house with daisyUi</title>
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -55,12 +57,12 @@
                         <img src="/images/arrow.png" alt="">
                     </button>
                 </div>
-                <div>
+                <div class="flex flex-col">
                     <div class="">
-                        <img src="/images/banner.png" class="max-w-lg" />
+                        <img src="/images/banner.png" class="md:max-w-lg lg:w-[500px] w-full" />
                     </div>
                     <!-- rating-badge -->
-                    <div class="flex items-center gap-4 p-5 shadow-2xl rounded-lg w-60 bg-white z-0 ml-12 -mt-20">
+                    <div class="flex items-center gap-4 p-5 rounded-lg w-60 bg-white z-0 ml-12 -mt-20">
                         <div>
                             <img src="/images/icon/Group 5.png" alt="" class="w-10">
                         </div>
@@ -192,7 +194,7 @@
                 <!-- review container -->
                 <div class="relative">
                     <!-- review next -->
-                    <div class="p-6 rounded-lg bg-white relative opacity-40 z-10 w-[400px] ">
+                    <div class="p-6 rounded-lg bg-white relative opacity-40 z-10 md:w-[400px] ">
                         <img src="/images/client.png" alt="client"
                             class="absolute -left-5 -top-5 border-4 rounded-full border-white bg-white">
                         <p class="text-base text-des ">We are providing the best and suitable home insurance services
@@ -204,7 +206,7 @@
                         </div>
                     </div>
                     <!-- review current -->
-                    <div class="p-10 rounded-lg bg-white absolute z-20 top-40 -left-20 w-[400px]">
+                    <div class="p-10 rounded-lg bg-white absolute z-20 top-40 md:-left-20 mdw-[400px]">
                         <img src="/images/client.png" alt="client"
                             class="absolute -left-5 -top-5 border-4 rounded-full border-white bg-white">
                         <p class="text-base text-des ">We are providing the best and suitable home insurance services
@@ -216,7 +218,7 @@
                         </div>
                     </div>
                     <!-- review previous -->
-                    <div class="p-6 rounded-lg bg-white relative opacity-40 z-10 mt-16 w-[400px]">
+                    <div class="p-6 rounded-lg bg-white relative opacity-40 z-10 mt-16 md:w-[400px]">
                         <img src="/images/client.png" alt="client"
                             class="absolute -left-5 -top-5 border-4 rounded-full border-white bg-white">
                         <p class="text-base text-des ">We are providing the best and suitable home insurance services
@@ -239,7 +241,7 @@
               </div>
 
               <!-- EVENT container -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         <!-- card1 -->
         <div className="card card-compact bg-base-100 "
           class="w-full border-solid border-2  p-6 rounded-lg  flex flex-col gap-6">
@@ -293,9 +295,65 @@
 
     </main>
 
-    <footer>
+    <!-- footer -->
+<footer class="bg-gradient-to-l from-[#FF000026] to-[#FF893826] px-6 py-6 md:pl-32 md:py-12 mt-28">
+    <div class="flex gap-4 md:justify-between md:pr-32">
+        <div>
+            <img src="/images/cup.png" alt="cup">
+        </div>
+        <div class="flex items-center gap-8">
+            <p>Ready to get strated?</p>
+    
+            <button class="btn bg-gradient-to-l from-[#FF0000] to-[#FF8938] flex gap-2 text-xl text-white">Get Started</button>
+        </div>
+    </div>
+    <div class=" mt-12 footer  text-base-content ">
+        <nav>
+          <h6 class="text-xl text-tittle font-bold">Quick Links</h6>
+          <a class="text-base text-des link link-hover">Home</a>
+          <a class="text-base text-des link link-hover">About us</a>
+          <a class="link link-hover text-base text-des">Insurance</a>
+          <a class="link link-hover text-base text-des">Privacy policy</a>
+        </nav>
+        <nav>
+          <h6 class="text-xl text-tittle font-bold">Our Service</h6>
+          <a class="link link-hover text-base text-des">Life Insurance</a>
+          <a class="link link-hover text-base text-des">Car Insurance</a>
+          <a class="link link-hover text-base text-des">Health Insurance</a>
+          <a class="link link-hover text-base text-des">House Insurance</a>
+        </nav>
+        <nav>
+          <h6 class="text-xl text-tittle font-bold">help</h6>
+          <a class="link link-hover text-base text-des">FAQs</a>
+          <a class="link link-hover text-base text-des">Contact Us</a>
+        </nav>
+        <form>
+          <h6 class="text-xl text-tittle font-bold">Subscribe to our <br> newsletter</h6>
+          <fieldset class="form-control w-80">
+            
+            <div class="join mt-6">
+              <input
+                type="email"
+                placeholder="Email address"
+                class=" border-b-2 w-[270px] border-des bg-inherit" />
+              <button class="btn rounded-full btn bg-gradient-to-l from-[#FF0000] to-[#FF8938] flex gap-2 text-xl text-white">
+                <i class="fa-solid fa-greater-than"></i>
+              </button>
+            </div>
+          </fieldset>
+          <div class="text-xl space-x-6 mt-6">
+            <a><i class="fa-brands fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-twitter"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </form>
+        
+    </div>
+      <div class="flex justify-center">
+        <p class="text-base text-des mt-12">© 2027 UIDesign.to - All rights reserved.</p>
+    </div>
 
-    </footer>
+</footer>
 
 </body>
 
